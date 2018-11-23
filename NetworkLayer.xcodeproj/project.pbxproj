@@ -88,7 +88,6 @@
 		A506294121A838D5005372DD /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				A506294421A83938005372DD /* EndPointType.swift */,
 				A506294621A839FB005372DD /* HTTPMethod.swift */,
 				A506294821A83AC7005372DD /* HTTPTask.swift */,
 				A506295621A84089005372DD /* NetworkRouterCompletion.swift */,
@@ -110,6 +109,7 @@
 		A506294321A83923005372DD /* EndPointType */ = {
 			isa = PBXGroup;
 			children = (
+				A506294421A83938005372DD /* EndPointType.swift */,
 			);
 			path = EndPointType;
 			sourceTree = "<group>";
