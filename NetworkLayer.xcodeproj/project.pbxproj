@@ -29,6 +29,7 @@
 		BB0E4B2421A9C37D009B78A0 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0E4B2321A9C37D009B78A0 /* NetworkResponse.swift */; };
 		BB0E4B2721A9CA43009B78A0 /* ModelApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0E4B2621A9CA43009B78A0 /* ModelApiResponse.swift */; };
 		BB0E4B2921A9CD75009B78A0 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0E4B2821A9CD75009B78A0 /* Result.swift */; };
+		BB0E4B2B21A9D08C009B78A0 /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0E4B2A21A9D08C009B78A0 /* NetworkLogger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		BB0E4B2321A9C37D009B78A0 /* NetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
 		BB0E4B2621A9CA43009B78A0 /* ModelApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelApiResponse.swift; sourceTree = "<group>"; };
 		BB0E4B2821A9CD75009B78A0 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		BB0E4B2A21A9D08C009B78A0 /* NetworkLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				A506294821A83AC7005372DD /* HTTPTask.swift */,
 				A506295621A84089005372DD /* NetworkRouterCompletion.swift */,
 				A506295A21A841CD005372DD /* Router.swift */,
+				BB0E4B2A21A9D08C009B78A0 /* NetworkLogger.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -334,6 +337,7 @@
 				A506295521A83F9F005372DD /* JSONParameterEncoder.swift in Sources */,
 				A506295721A84089005372DD /* NetworkRouterCompletion.swift in Sources */,
 				A5D9252B21A833BD00C3A0E3 /* ViewController.swift in Sources */,
+				BB0E4B2B21A9D08C009B78A0 /* NetworkLogger.swift in Sources */,
 				BB0E4B2721A9CA43009B78A0 /* ModelApiResponse.swift in Sources */,
 				A5D9252921A833BD00C3A0E3 /* AppDelegate.swift in Sources */,
 				BB0E4B2421A9C37D009B78A0 /* NetworkResponse.swift in Sources */,
