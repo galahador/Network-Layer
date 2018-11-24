@@ -24,6 +24,9 @@
 		A5D9253021A833BE00C3A0E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5D9252F21A833BE00C3A0E3 /* Assets.xcassets */; };
 		A5D9253321A833BE00C3A0E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5D9253121A833BE00C3A0E3 /* LaunchScreen.storyboard */; };
 		A5D9253E21A833BE00C3A0E3 /* NetworkLayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D9253D21A833BE00C3A0E3 /* NetworkLayerTests.swift */; };
+		BB0E4B1D21A9C0DA009B78A0 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0E4B1C21A9C0DA009B78A0 /* EndPoint.swift */; };
+		BB0E4B2221A9C281009B78A0 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0E4B2121A9C281009B78A0 /* NetworkManager.swift */; };
+		BB0E4B2421A9C37D009B78A0 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0E4B2321A9C37D009B78A0 /* NetworkResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,9 @@
 		A5D9253921A833BE00C3A0E3 /* NetworkLayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkLayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5D9253D21A833BE00C3A0E3 /* NetworkLayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayerTests.swift; sourceTree = "<group>"; };
 		A5D9253F21A833BE00C3A0E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB0E4B1C21A9C0DA009B78A0 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		BB0E4B2121A9C281009B78A0 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		BB0E4B2321A9C37D009B78A0 /* NetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,13 +84,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A506294021A838CD005372DD /* Manager */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Manager;
-			sourceTree = "<group>";
-		};
 		A506294121A838D5005372DD /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -106,12 +105,13 @@
 			path = Encoding;
 			sourceTree = "<group>";
 		};
-		A506294321A83923005372DD /* EndPointType */ = {
+		A506294321A83923005372DD /* EndPoint */ = {
 			isa = PBXGroup;
 			children = (
 				A506294421A83938005372DD /* EndPointType.swift */,
+				BB0E4B1C21A9C0DA009B78A0 /* EndPoint.swift */,
 			);
-			path = EndPointType;
+			path = EndPoint;
 			sourceTree = "<group>";
 		};
 		A506294C21A83C26005372DD /* NetworkProtocol */ = {
@@ -154,7 +154,6 @@
 			children = (
 				A5D9252821A833BD00C3A0E3 /* AppDelegate.swift */,
 				A5D9254B21A8360F00C3A0E3 /* Networking */,
-				A5D9254A21A8350300C3A0E3 /* Model */,
 				A5D9254821A8347900C3A0E3 /* ViewController */,
 				A5D9254921A8348100C3A0E3 /* Storyboard */,
 				A5D9252F21A833BE00C3A0E3 /* Assets.xcassets */,
@@ -189,24 +188,26 @@
 			path = Storyboard;
 			sourceTree = "<group>";
 		};
-		A5D9254A21A8350300C3A0E3 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		A5D9254B21A8360F00C3A0E3 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
 				A506294F21A83CD1005372DD /* NetworkError */,
 				A506294C21A83C26005372DD /* NetworkProtocol */,
-				A506294321A83923005372DD /* EndPointType */,
+				A506294321A83923005372DD /* EndPoint */,
 				A506294221A838DC005372DD /* Encoding */,
+				BB0E4B2021A9C266009B78A0 /* NetworkManager */,
 				A506294121A838D5005372DD /* Service */,
-				A506294021A838CD005372DD /* Manager */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		BB0E4B2021A9C266009B78A0 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				BB0E4B2321A9C37D009B78A0 /* NetworkResponse.swift */,
+				BB0E4B2121A9C281009B78A0 /* NetworkManager.swift */,
+			);
+			path = NetworkManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,14 +315,17 @@
 				A506294921A83AC7005372DD /* HTTPTask.swift in Sources */,
 				A506294E21A83C40005372DD /* ParameterEncoder.swift in Sources */,
 				A506294521A83938005372DD /* EndPointType.swift in Sources */,
+				BB0E4B2221A9C281009B78A0 /* NetworkManager.swift in Sources */,
 				A506295521A83F9F005372DD /* JSONParameterEncoder.swift in Sources */,
 				A506295721A84089005372DD /* NetworkRouterCompletion.swift in Sources */,
 				A5D9252B21A833BD00C3A0E3 /* ViewController.swift in Sources */,
 				A5D9252921A833BD00C3A0E3 /* AppDelegate.swift in Sources */,
+				BB0E4B2421A9C37D009B78A0 /* NetworkResponse.swift in Sources */,
 				A506295921A840E7005372DD /* NetworkRouter.swift in Sources */,
 				A506295121A83CDE005372DD /* NetworkError.swift in Sources */,
 				A506295B21A841CD005372DD /* Router.swift in Sources */,
 				A506294721A839FB005372DD /* HTTPMethod.swift in Sources */,
+				BB0E4B1D21A9C0DA009B78A0 /* EndPoint.swift in Sources */,
 				A506295321A83D5F005372DD /* URLParameterEncoder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
