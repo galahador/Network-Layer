@@ -2,7 +2,7 @@
 //  Result.swift
 //  NetworkLayer
 //
-//  Created by CodeTribe on 11/24/18.
+//  Created by Petar Lemajic on 11/24/18.
 //  Copyright © 2018 Petar Lemajic. All rights reserved.
 //
 
